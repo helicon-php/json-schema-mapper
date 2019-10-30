@@ -1,0 +1,34 @@
+{
+    "name": "helicon/json-schema-mapper",
+    "type": "library",
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "Helicon\\JsonSchemaMapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Helicon\\JsonSchemaMapper\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "~7.3",
+        "ext-json": "*",
+        "helicon/type-converter": "^0.0.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "polidog",
+            "email": "polidogs@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.4",
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "scripts": {
+        "cs-fix": ["php-cs-fixer fix -v"]
+    }
+}
